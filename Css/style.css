@@ -1,0 +1,1556 @@
+
+.mobile-menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 1384px) {
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.801); /* Cambia el color de fondo y agrega transparencia */
+        z-index: 1000;
+        max-height: 0; /* Define la altura máxima inicial del menú */
+        overflow: hidden; /* Oculta el contenido que se despliega */
+        transition: max-height 0.5s ease; /* Ajusta la duración de la transición */
+    }
+    
+    .navbar-collapse.show {
+        max-height: 500px; /* Altura máxima del menú desplegado */
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .nav-item {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav-link {
+        padding: 10px 30px; /* Ajusta el padding para el efecto de cascada */
+    }
+
+    .nav-item:hover .nav-link {
+        background-color: #f0f0f0; /* Cambia el color de fondo al pasar el mouse */
+    }
+
+    .info-icon {
+        font-size: 30px;
+        color: #ffffff;
+    }
+
+    .info-icon:hover {
+        color:#11597d;
+    }
+}
+
+
+@media (min-width: 1385px) {
+    .mobile-menu-icon {
+        display: none;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    .info-icon {
+        font-size: 30px;
+        color: #00000000;
+    }
+
+    .info-icon:hover {
+        color: #00000000;
+    }
+}
+
+/* Estilos generales */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+#about-section {
+    padding-top: 60px; /* Ajusta este valor según la altura de tu navbar */
+}
+#autoridad-section {
+    padding-top: 60px; /* Ajusta este valor según la altura de tu navbar */
+}
+#actividades-section {
+    padding-top: 60px; /* Ajusta este valor según la altura de tu navbar */
+}
+#articulos-section {
+    padding-top: 60px; /* Ajusta este valor según la altura de tu navbar */
+}
+#acta-section {
+    padding-top: 60px; /* Ajusta este valor según la altura de tu navbar */
+}
+#crono-section {
+    padding-top: 60px; /* Ajusta este valor según la altura de tu navbar */
+}
+#inscripcion-section {
+    padding-top: 60px; /* Ajusta este valor según la altura de tu navbar */
+}
+#ubicacion-section {
+    padding-top: 60px; /* Ajusta este valor según la altura de tu navbar */
+}
+#organizacion-section {
+    padding-top: 60px; /* Ajusta este valor según la altura de tu navbar */
+}
+
+
+
+.container-nav {
+    width: 95%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Navigation Styles */
+.main-nav {
+    background-color: #000000a7;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px; /* Ajusta el padding si es necesario */
+    transition: color 0.3s;
+    font-size: 14px; /* Reducir el tamaño de la fuente */
+}
+
+
+
+.navbar-nav .nav-item .nav-link:hover {
+    color:#11597d;
+}
+
+.navbar-nav {
+    display: flex;
+    text-align: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin-left: 20px;
+    transition: transform 0.3s ease;
+}
+
+.nav-item:hover {
+    transform: translateY(-2px);
+}
+
+.navbar-toggler {
+    margin-left: auto;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.logo-icon-small {
+    width: 60px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin-left: 25px;
+}
+
+.logoRed {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin-top: 5px;
+    margin-left:5px;
+}
+.logoUM {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+
+
+/* Hero Block Styles */
+.hero-block {
+    background-image: url('../Css/Pic/speaker-woman-performing-stage-speaking-large-audience-event-professional.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 250px 0 150px; /* Padding para pantallas grandes */
+}
+
+@media (max-width: 1200px) {
+    .hero-block {
+        padding: 200px 0 100px; /* Ajuste para pantallas medianas como tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-block {
+        padding: 150px 0 80px; /* Ajuste para pantallas pequeñas como tablets en orientación vertical */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-block {
+        padding: 100px 0 50px; /* Ajuste para pantallas muy pequeñas como teléfonos móviles */
+    }
+}
+
+
+.container-hero {
+    margin-top: 85px; /* Cambia el valor según la cantidad de espacio que desees agregar */
+}
+
+.container-hero h1 {
+    color: rgb(233, 233, 233);
+    font-size: 70px;
+    font-weight: 800px;
+    margin-left: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Estilos para el título */
+.hero-heading {
+    color: #ffffff; /* Cambia el color del texto a blanco */
+    font-size: 55px; /* Tamaño de fuente más grande */
+    font-weight: 800;
+    margin-bottom: 20px;
+    margin-left: 40px; /* Agrega margen izquierdo */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Agrega sombra al texto */
+}
+
+/* Estilos para alinear contenido a la izquierda */
+.hero-text-block {
+    text-align: left;
+}
+
+.site-logo {
+    margin-left: 30px;
+}
+.logo-icon{
+    margin-left: 20px;
+    width: 400px;
+    height: 500px;
+}
+
+.text1 {
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 24px; /* Aumenta el tamaño del texto */
+    font-weight: bold; /* Agrega negrita */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.text2 {
+    text-align: justify;
+    color: rgb(233, 233, 233);
+    margin-left: 40px;
+    font-size: 18px; /* Aumenta el tamaño del texto */
+}
+
+.header-text {
+    margin-left: 20px; /* Ajusta el margen izquierdo del texto */
+}
+
+.header-text p {
+    margin-bottom: 10px; /* Ajusta el margen inferior del párrafo */
+}
+
+/* Stats Block Styles */
+.stats-block .item {
+    margin-bottom: 20px;
+}
+
+.stats-block .number {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.stats-block .unit {
+    color: #fff;
+    font-size: 16px;
+}
+
+/* About Section Styles */
+.section-heading {
+    padding: 20px;
+    font-size: 3rem; /* Tamaño de fuente más grande para el título */
+    color: #000000; /* Color de texto blanco */
+    text-align: center; /* Centrado horizontal para el título */
+}
+
+.section-intro {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.benefits-list {
+    margin-bottom: 30px;
+}
+
+.benefits-list h4 {
+    color: #333;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.benefits-list ul li {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Media Block Styles */
+.media-block {
+    padding: 100px 0;
+}
+
+.media-block .card {
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.media-block .card-title {
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.media-block .meta {
+    color: #666;
+    font-size: 16px;
+}
+
+/* Schedule Section Styles */
+
+
+.schedule-tab-content {
+    margin-top: 50px;
+}
+
+.schedule-tab-content .item {
+    margin-bottom: 30px;
+}
+
+.schedule-tab-content .title {
+    color: #333;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.schedule-tab-content .desc {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Estilos para la seccion Datos */
+.container-dat {
+    background-color: #11597d; /* Cambia el color de fondo a azul */
+}
+
+/* Estilos para la seccion Datos */
+.container-dat .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.container-dat .col-6 {
+    flex: 1; /* Permite que los elementos se ajusten automáticamente */
+    max-width: 50%; /* Hace que cada elemento ocupe la mitad del ancho en pantallas grandes */
+}
+
+.container-dat .item {
+    text-align: center; /* Alinea el contenido al centro */
+    padding-top: 0.5rem !important;
+    color: black; /* Cambia el color del texto a negro */
+}
+
+.container-dat .number {
+    font-size: 38px; /* Aumenta el tamaño de la fuente de los números */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Agrega una leve sombra */
+}
+
+.container-dat .unit{
+    color: #000;
+    font-size: 25px;
+}
+
+
+/* Estilos para la sección "Sobre el TEYET" */
+.container-session1 {
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+
+.sobre-intro {
+    text-align: justify;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+.benefits-list {
+    margin-top: 30px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.benefits-list h4 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center; /* Centra el título */
+}
+
+.benefits-list ul {
+    list-style: none;
+    padding-left: 0;
+    display: inline-block; /* Hace que la lista sea horizontal */
+    text-align: left; /* Alinea el texto a la izquierda dentro de la lista */
+    margin-bottom: 20px; /* Añade espacio inferior a la lista */
+}
+
+.benefits-list .item li i {
+    color: green; /* Cambia el color de los íconos a verde */
+}
+
+/*Estilos del countdown*/
+/* Estilos para el contador */
+.event-countdown {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.event-countdown h4 {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 7px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown-item {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.countdown-label {
+    font-size: 12px;
+    color: #000000;
+    text-transform: uppercase;
+}
+.countdown-number {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color:#378ab3c5; /* Fondo azul con opacidad */
+    padding: 10px 20px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+
+
+
+
+/* Estilos para "Session2- Ediciones anteriores*/
+.container-session2 {
+    background-color:#11597d; /* Fondo celeste */
+    padding: 20px; /* Espaciado interno */
+    margin-bottom: 30px; /* Espacio inferior */
+}
+
+.container-session2 h4 {
+    font-size: 2.5rem; /* Tamaño de fuente más grande para el título */
+    color: #fff; /* Color de texto blanco */
+    text-align: center; /* Centrado horizontal para el título */
+    margin-bottom: 30px; /* Espacio inferior */
+}
+
+.container-session2 .section-intro {
+    color: #fff; /* Texto blanco */
+    text-align: center; /* Centrado horizontal para el texto */
+    font-size: 1.2rem; /* Tamaño de fuente más grande */
+    margin-bottom: 30px; /* Espacio inferior */
+}
+
+.container-session2 .row {
+    display: flex; /* Flexbox para alinear los cuadros horizontalmente */
+    flex-wrap: wrap; /* Envolver los cuadros cuando no haya suficiente espacio */
+    justify-content: space-between; /* Espacio entre los cuadros */
+}
+
+.container-session2 .col-6 {
+    flex: 0 0 calc(50% - 15px); /* Ancho del 50% para cada columna en pantallas medianas */
+    max-width: calc(50% - 15px); /* Ancho máximo con espacio entre cuadros */
+    margin-bottom: 30px; /* Espacio inferior entre columnas */
+}
+
+.container-session2 .col-lg-3 {
+    flex: 0 0 calc(25% - 15px); /* Ancho del 25% para cada columna en pantallas grandes */
+    max-width: calc(25% - 15px); /* Ancho máximo con espacio entre cuadros */
+}
+
+.container-session2 .card {
+    background-color: #fff; /* Fondo blanco para los cuadros */
+    border-radius: 10px; /* Bordes redondeados */
+    border: none; /* Sin bordes */
+    text-align: left; /* Alineado a la izquierda para el contenido */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.container-session2 .card-title {
+    font-size: 1.25rem; /* Tamaño de fuente para el título */
+    margin-bottom: 10px; /* Espacio inferior para el título */
+}
+
+.container-session2 .card-text, .container-session2 .meta {
+    font-size: 1rem; /* Tamaño de fuente para el texto */
+    color: #000; /* Color del texto negro */
+}
+
+@media screen and (max-width: 991px) {
+    .container-session2 .col-lg-3 {
+        flex: 0 0 calc(50% - 15px); /* Ancho del 50% para cada columna en pantallas medianas */
+        max-width: calc(50% - 15px); /* Ancho máximo con espacio entre cuadros */
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container-session2 .col-lg-3 {
+        flex: 0 0 100%; /* Ancho del 100% para cada columna en pantallas pequeñas */
+        max-width: 100%; /* Ancho máximo para que ocupe toda la pantalla */
+    }
+}
+
+/* Estilos para la sección "AUTORIDADES" */
+.container-session3 {
+    padding: 30px;
+}
+
+.container-session3 h1 {
+    font-size: 2.5rem;
+    color:#11597d;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-session3 h5 {
+    font-size: 1.2rem;
+    color:#278bbd;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.content-info {
+    text-align: left;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    overflow: hidden; 
+    transition: max-height 0.5s ease-in-out; 
+}
+
+.hidden {
+    display: none;
+}
+
+.rotate {
+    transition: transform 0.3s ease;
+    transform: rotate(180deg);
+}
+
+/* ESTILOS DEL CAROUSEL */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    max-width: 400px; /* Ancho máximo del contenedor */
+    text-align: center; /* Centra las imágenes dentro del contenedor */
+}
+
+.carousel-container h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.controllers {
+    height: 100%;
+    width: 100%;
+    z-index: 200;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.carousel img {
+    max-width: 100%; /* Máximo ancho de cada imagen */
+    max-height: 95px; /* Altura máxima de cada imagen aún más reducida */
+    object-fit: contain; /* Mantiene la proporción de las imágenes sin cortarlas */
+    height: auto;
+    display: inline-block; /* Centra horizontalmente las imágenes */
+    margin: 0 auto; /* Centra horizontalmente las imágenes */
+    margin-bottom: 30px;
+}
+
+.middleBox {
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 200;
+}
+
+.leftArrow, .rightArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px; /* Altura de las flechas */
+    width: 40px; /* Ancho de las flechas */
+}
+
+.leftArrow {
+    left: 5px; /* Ajusta la posición de la flecha izquierda */
+}
+
+.rightArrow {
+    right: 5px; /* Ajusta la posición de la flecha derecha */
+}
+
+.arrow {
+    color: rgb(0, 0, 0);
+    font-size: 24px; /* Tamaño de las flechas */
+    transition: .3s ease;
+}
+
+.arrow:hover {
+    color: #333; /* Cambia el color de la flecha al pasar el cursor */
+}
+
+.dot__container {
+    position: absolute;
+    bottom: 10px; /* Distancia desde abajo */
+    width: 100%;
+    text-align: center;
+    z-index: 255;
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px; /* Tamaño de los puntos */
+    width: 10px; /* Tamaño de los puntos */
+    margin: 0 5px; /* Espacio entre los puntos */
+    border-radius: 50%; /* Hace los puntos circulares */
+    transition: background-color .3s ease;
+}
+
+.dot--desktop {
+    display: inline-block;
+}
+
+.dot--mobile {
+    display: none;
+}
+
+.myMobileSlides {
+    display: none;
+}
+
+/* Oculta el carrusel móvil en pantallas de escritorio */
+@media screen and (min-width: 768px) {
+    .mobile-carousel {
+        display: none;
+    }
+}
+
+/* Oculta el carrusel de escritorio en pantallas móviles */
+@media screen and (max-width: 767px) {
+    .desktop-carousel {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dot {
+        height: 5px; /* Tamaño de los puntos en dispositivos móviles */
+        width: 5px; /* Tamaño de los puntos en dispositivos móviles */
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+    .myMobileSlides {
+        display: block;
+    }
+
+    .dot--desktop {
+        display: none;
+    }
+
+    .dot--mobile {
+        display: inline-block;
+    }
+}
+
+
+/* Estilos para la sección "ACTIVIDADES" */
+.container-session4 {
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+}
+
+.container-session4 h1 {
+    font-size: 2.5rem;
+    color:#11597d;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.activity {
+    margin-bottom: 40px;
+}
+
+.activity .meta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.activity .meta h2 {
+    font-size: 1.8rem;
+    color:#11597d;
+    margin-bottom: 0;
+}
+
+.activity .content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.activity .title {
+    font-size: 1.5rem;
+    color:#11597d;
+    margin-bottom: 20px;
+}
+
+.activity .desc {
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+.activity .desc ul {
+    padding-left: 20px;
+}
+
+.desc p {
+    margin-bottom: 10px;
+}
+
+.desc:last-child {
+    margin-bottom: 0;
+}
+
+/*LIBROS DE ACTAS*/
+.container-acta {
+    background-color:#ffffff;/* Cambié el color de fondo a un tono más azulado */
+    padding: 50px 15px;
+    margin-bottom: 20px; /* Añadí un poco de margen inferior */
+    text-align: center;
+    border-radius: 10px; /* Agregué bordes redondeados para suavizar los bordes */
+}
+.container-acta h1 {
+    font-size: 2.5rem;
+    color: #11597d;
+    margin-bottom: 20px; /* Aumenté el espacio inferior para separar el título del contenido */
+}
+.container-acta p {
+    font-size: 1.5rem;
+    color: #11597d;
+    margin-bottom: 20px; /* Aumenté el espacio inferior para separar el título del contenido */
+}
+
+/*CRONOGRAMA*/
+.container-crono {
+    background-color: #11597d; /* Cambié el color de fondo a un tono más azulado */
+    padding: 50px 15px;
+    margin-bottom: 20px; /* Añadí un poco de margen inferior */
+    text-align: center;
+    border-radius: 10px; /* Agregué bordes redondeados para suavizar los bordes */
+}
+
+.container-crono h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px; /* Aumenté el espacio inferior para separar el título del contenido */
+}
+
+.container-crono p {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 20px; /* Aumenté el espacio inferior para separar el título del contenido */
+}
+
+/*CRONOGRAMA*/
+.container-crono {
+    background-color: #11597d; /* Cambié el color de fondo a un tono más azulado */
+    padding: 50px 15px;
+    margin-bottom: 20px; /* Añadí un poco de margen inferior */
+    text-align: center;
+    border-radius: 10px; /* Agregué bordes redondeados para suavizar los bordes */
+}
+
+.container-crono h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px; /* Aumenté el espacio inferior para separar el título del contenido */
+}
+
+.container-crono p {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 20px; /* Aumenté el espacio inferior para separar el título del contenido */
+}
+
+.crono-back{
+    background-color: #11597d; /* Mantuve el mismo color de fondo para el contenedor de cronograma */
+}
+
+.day {
+    margin-bottom: 20px;
+}
+
+.day h2 {
+    padding: 20px;
+    margin: 0;
+    background-color: #0d4e6b; /* Cambié el color de fondo de los encabezados de día a un tono más oscuro */
+    color: #ffffff;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+}
+
+.schedule {
+    font-size: 1.2rem;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.schedule th, .schedule td {
+    padding: 15px;
+    text-align: center;
+    border: none; /* Eliminé el borde de las celdas */
+}
+
+.schedule .hora1{
+    padding: 20px; /* Ajusté el padding para mantener la consistencia */
+    text-align: center;
+}
+.schedule .hora2{
+    padding: 40px; /* Ajusté el padding para mantener la consistencia */
+    text-align: center;
+}
+.schedule .hora3{
+    padding: 60px; /* Ajusté el padding para mantener la consistencia */
+    text-align: center;
+}
+.schedule .linea {
+    border-right: 1px solid #00000094;
+}
+.hiddenn {
+    display: none;
+}
+
+.rotatee {
+    transition: transform 0.3s ease;
+    transform: rotate(90deg); /* Cambia a 90 grados para una rotación lateral */
+}
+
+
+.schedule th {
+    background-color:#2d6f8d; /* Mantuve el color de fondo de los encabezados de tabla */
+    color: #ffffff; /* Color de texto blanco para los encabezados de tabla */
+}
+
+.schedule tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de fondo alternativo para filas pares */
+}
+.schedule tbody tr:nth-child(odd) {
+    background-color: #d7e0e9; /* Color de fondo alternativo para filas impares */
+}
+
+
+/* Estilos adicionales para las tablas internas */
+.schedule.track-table3 {
+    width: 100%;
+    border: none; /* Eliminé el borde de las tablas internas */
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+}
+
+
+.schedule.track-table3 th,
+.schedule.track-table3 td {
+    padding: 10px;
+    text-align: center;
+    background-color: #ffffff; /* Fondo blanco para las tablas internas */
+}
+
+.schedule.track-table2 th,
+.schedule.track-table2 td {
+    background-color:  #ffffff; /* Fondo gris claro para las tablas internas */
+}
+
+.schedule.track-table3 th,
+.schedule.track-table3 td {
+    background-color:  #ffffff; /* Fondo gris claro para las tablas internas */
+}
+
+
+
+
+.schedule.track-table2 tbody tr:nth-child(odd):hover {
+    background-color: #ffffff; /* Color de fondo al pasar el ratón por encima de filas impares */
+}
+.schedule.track-table3 .hora2 {
+    padding: 55px;
+    text-align: center;
+}
+.schedule.track-table2 .hora2 {
+    padding: 55px;
+    text-align: center;
+}
+.schedule.track-table .hora2 {
+    padding: 55px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.rotate {
+    transition: transform 0.3s ease;
+    transform: rotate(180deg);
+}
+
+
+
+
+/*ESTILOS TABLA ARTICULOS*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  table ul {
+    list-style-type: none;
+  }
+  
+
+/* Estilos para la sección "ACCESO A LA ORGANIZACION" */
+.container-session5 {
+    background-color:#11597d; /* Cambié el color de fondo a un tono más azulado */
+    padding: 50px 15px;
+    margin-bottom: 20px; /* Añadí un poco de margen inferior */
+    text-align: center;
+    border-radius: 10px; /* Agregué bordes redondeados para suavizar los bordes */
+}
+
+.container-session5 h4 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px; /* Aumenté el espacio inferior para separar el título del contenido */
+}
+
+.btn-container {
+    margin-top: 20px;
+}
+
+.btn-red {
+    background-color: #e74c3c; /* Cambié el color del botón a un rojo más intenso */
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px; /* Aumenté el tamaño del botón */
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-red:hover{
+    background-color: #c0392b; /* Cambié el tono del rojo al pasar el mouse */
+}
+
+/* Estilos para la sección "INSCRIPCION" */
+.container-session6 {
+    padding: 30px;
+    text-align: center;
+}
+
+.container-session6 h3 {
+    font-size: 2.5rem;
+    color:#11597d; /* Color azul */
+    margin-bottom: 20px;
+}
+
+.container-session6 .btn {
+    background-color: #e74c3c; /* Color rojo */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.container-session6 .btn:hover {
+    background-color: #c0392b; /* Color rojo más oscuro al pasar el mouse */
+}
+
+.container-session6 .desc {
+    color: #555; /* Color de texto más oscuro */
+    margin-bottom: 20px;
+}
+
+.container-session6 .important {
+    color: #e74c3c; /* Color rojo para información importante */
+    font-weight: bold;
+}
+
+.container-session6 .contact-info {
+    margin-top: 30px; /* Espacio adicional arriba de la información de contacto */
+}
+
+.button-container {
+    margin-top: 20px; /* Espacio adicional arriba de los botones */
+}
+
+
+
+/* Estilos para la sección "UBICACION" */
+.container-session7 {
+    background-color:#11597d; /* Fondo celeste */
+    padding: 50px 15px; /* Espaciado interno con valores de los costados reducidos */
+    margin-bottom: 0; /* Elimina el margen inferior */
+    text-align: center;
+}
+
+.container-session7 h3 {
+    font-size: 2.5rem; /* Tamaño de fuente más grande para el título */
+    color: #fff; /* Color de texto blanco */
+    text-align: center; /* Centrado horizontal para el título */
+    margin-bottom: 5px; /* Espacio inferior */
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    width: 60%; /* Establece el ancho del contenedor del mapa */
+    margin: 0 auto; /* Centra horizontalmente el contenedor del mapa */
+    padding-bottom: 40%; /* Proporción 16:9 para el contenedor */
+    height: 0;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container-session7 h4 {
+    font-size: 1.5rem; /* Tamaño de fuente más grande para el título */
+    color: #fff; /* Color de texto blanco */
+    text-align: center; /* Centrado horizontal para el título */
+    margin-bottom: 2px;
+}
+.container-session7 p {
+    color: #fff; /* Texto blanco */
+    font-size: 1.0rem; /* Tamaño de fuente */
+    text-align: justify;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+/*ESTILOS SECCION 8, 9 Y 10*/
+/* Estilos para la sección "Auspicios" */
+.container-session {
+    padding: 40px 20px; /* Añadido un padding uniforme */
+    text-align: center;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espacio inferior */
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    border-left: 5px solid#11597d; /* Borde izquierdo azul */
+    border-right: 5px solid#11597d; /* Borde derecho azul */
+}
+
+.container-session h3,
+.container-session h4 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.logos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten a la fila */
+    gap: 20px;
+}
+
+.logo-container img {
+    max-width: 100%; /* Ajuste para imágenes responsivas */
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logos-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten a la fila */
+    gap: 40px;
+}
+
+.logo-container1 img {
+    max-width: 100%; /* Ajuste para imágenes responsivas */
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+@media (max-width: 767px) {
+    .container-session h3,
+    .container-session h4 {
+        font-size: 1.5rem;
+        color: #333;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .logo-container:nth-child(1) img,
+    .logo-container:nth-child(5) img {
+        max-width: 100px; /* Tamaño máximo para la primera y quinta imagen en pantallas pequeñas */
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
+
+    .logo-container:nth-child(2) img{
+        width: 100%;
+        max-width: 100px;
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
+
+    .logo-container:nth-child(3) img{
+        width: 100%;
+        max-width: 120px;
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
+    .logo-container:nth-child(4) img{
+        width: 100%;
+        max-width: 75px;
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
+    .logo-container:nth-child(6) img{
+        width: 100%;
+        max-width: 115px;
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
+    .logo-container:nth-child(7) img{
+        width: 100%;
+        max-width: 65px;
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
+    .logo-container:nth-child(8) img{
+        width: 100%;
+        max-width: 75px;
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
+
+    .logo-container1:nth-child(1) img{
+        width: 100%;
+        max-width: 160px;
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
+    .logo-container1:nth-child(2) img{
+        width: 100%;
+        max-width: 100px;
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
+    
+    
+
+    .logo-container:nth-child(1) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #1900ff); /* Agrega sombra */
+    }
+    .logo-container:nth-child(2) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #757575); /* Agrega sombra */
+    }
+    .logo-container:nth-child(3) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #000000); /* Agrega sombra */
+    }
+    .logo-container:nth-child(4) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #641fa8); /* Agrega sombra */
+    }
+    .logo-container:nth-child(5) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #1bdcdc); /* Agrega sombra */
+    }
+    .logo-container:nth-child(6) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #23bad1); /* Agrega sombra */
+    }
+    .logo-container:nth-child(7) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #0b571c); /* Agrega sombra */
+    }
+    .logo-container:nth-child(8) img:hover {
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #b20000); /* Agrega sombra */
+    }
+    
+    .logo-container1:nth-child(1) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #ff0000); /* Agrega sombra */
+    }
+
+    .logo-container1:nth-child(2) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #000000); /* Agrega sombra */
+    }
+}
+
+/* Establecer tamaños máximos para diferentes tamaños de pantalla */
+@media (min-width: 768px) {
+    .container-session h3,
+    .container-session h4 {
+        font-size: 2rem;
+        color: #333;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .logo-container:nth-child(1) img,
+    .logo-container:nth-child(5) img {
+        max-width: 120px; /* Tamaño máximo para la primera y quinta imagen */
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
+    .logo-container:nth-child(3) img{
+        width: 100%;
+        max-width: 120px;
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
+
+    .logo-container:nth-child(2) img{
+        width: 100%;
+        max-width: 130px;
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
+    .logo-container:nth-child(4) img{
+        width: 100%;
+        max-width: 75px;
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
+    .logo-container:nth-child(6) img{
+        width: 100%;
+        max-width: 140px;
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
+    .logo-container:nth-child(7) img{
+        width: 100%;
+        max-width: 85px;
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
+    .logo-container:nth-child(8) img{
+        width: 100%;
+        max-width: 95px;
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
+
+
+    .logo-container1:nth-child(1) img{
+        width: 100%;
+        max-width: 180px;
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
+    .logo-container1:nth-child(2) img{
+        width: 100%;
+        max-width: 120px;
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
+    
+    
+
+    .logo-container:nth-child(1) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #1900ff); /* Agrega sombra */
+    }
+    .logo-container:nth-child(2) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #757575); /* Agrega sombra */
+    }
+    .logo-container:nth-child(3) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #000000); /* Agrega sombra */
+    }
+    .logo-container:nth-child(4) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #641fa8); /* Agrega sombra */
+    }
+    .logo-container:nth-child(5) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #1bdcdc); /* Agrega sombra */
+    }
+    .logo-container:nth-child(6) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #23bad1); /* Agrega sombra */
+    }
+    .logo-container:nth-child(7) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #0b571c); /* Agrega sombra */
+    }
+    .logo-container:nth-child(8) img:hover {
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #b20000); /* Agrega sombra */
+    }
+    
+    .logo-container1:nth-child(1) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #ff0000); /* Agrega sombra */
+    }
+
+    .logo-container1:nth-child(2) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #000000); /* Agrega sombra */
+    }
+}
+
+@media (min-width: 992px) {
+    .container-session h3,
+    .container-session h4 {
+        font-size: 2.5rem;
+        color: #333;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .logo-container:nth-child(1) img,
+    .logo-container:nth-child(5) img{
+        max-width: 150px; /* Ajuste para pantallas más grandes */
+        filter: drop-shadow(10px 7px 10px  #11597d);
+    }
+    .logo-container:nth-child(7) img{
+        max-width: 100px; /* Ajuste para pantallas más grandes */
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
+    .logo-container:nth-child(8) img{
+        max-width: 115px; /* Ajuste para pantallas más grandes */
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
+
+    .logo-container:nth-child(2) img{
+        width: 100%;
+        max-width: 140px;
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
+
+    .logo-container:nth-child(3) img{
+        width: 100%;
+        max-width: 140px;
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
+    .logo-container:nth-child(4) img{
+        width: 100%;
+        max-width: 95px;
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
+    .logo-container:nth-child(6) img{
+        width: 100%;
+        max-width: 140px;
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
+
+    .logo-container1:nth-child(1) img{
+        width: 100%;
+        max-width: 200px;
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
+    .logo-container1:nth-child(2) img{
+        width: 100%;
+        max-width: 130px;
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
+
+    
+    .logo-container:nth-child(1) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #1900ff); /* Agrega sombra */
+    }
+    .logo-container:nth-child(2) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #757575); /* Agrega sombra */
+    }
+    .logo-container:nth-child(3) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #000000); /* Agrega sombra */
+    }
+    .logo-container:nth-child(4) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #641fa8); /* Agrega sombra */
+    }
+    .logo-container:nth-child(5) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #1bdcdc); /* Agrega sombra */
+    }
+    .logo-container:nth-child(6) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #23bad1); /* Agrega sombra */
+    }
+    .logo-container:nth-child(7) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #0b571c); /* Agrega sombra */
+    }
+    .logo-container:nth-child(8) img:hover {
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #b20000); /* Agrega sombra */
+    }
+    
+    .logo-container1:nth-child(1) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #ff0000); /* Agrega sombra */
+    }
+
+    .logo-container1:nth-child(2) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #000000); /* Agrega sombra */
+    }
+    
+}
+
+
+/* Estilos del footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.footer .footer-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.footer .social-list {
+    list-style: none;
+    margin: 0 auto; /* Centra la lista horizontalmente */
+    max-width: 400px; /* Define un ancho máximo para la lista */
+    text-align: center; /* Centra el contenido de la lista */
+}
+
+.footer .social-list li {
+    margin-bottom: 20px; /* Aumenta el espacio entre los íconos */
+    display: inline-block; /* Hace que los íconos sean elementos en línea */
+}
+
+.footer .social-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px; /* Ajusta el tamaño de los íconos */
+    margin: 0 15px; /* Agrega un espacio horizontal entre los íconos */
+}
+
+.footer .social-list li a:hover {
+    text-decoration: none; /* Elimina el subrayado al pasar el mouse */
+}
+
+.footer small {
+    display: block; 
+    text-align: center;
+    font-size: 16px; 
+    font-weight: bold; 
+    margin-top: 5px;
+    color: #ccc; 
+}
