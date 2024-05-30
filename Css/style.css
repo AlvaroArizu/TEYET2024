@@ -940,39 +940,65 @@ body {
 
 
 /* Estilos adicionales para las tablas internas */
+/* Estilos adicionales para las tablas internas */
+.schedule.track-table2,
 .schedule.track-table3 {
     width: 100%;
-    border: none; /* Eliminé el borde de las tablas internas */
+    border: none;
     box-shadow: none;
     border-radius: 0;
     padding: 0;
     margin: 0;
-}
-
-
-.schedule.track-table3 th,
-.schedule.track-table3 td {
-    padding: 10px;
-    text-align: center;
-    background-color: #ffffff; /* Fondo blanco para las tablas internas */
+    border-collapse: collapse; /* Asegura que las tablas internas también colapsen correctamente */
 }
 
 .schedule.track-table2 th,
-.schedule.track-table2 td {
-    background-color:  #ffffff; /* Fondo gris claro para las tablas internas */
-}
-
+.schedule.track-table2 td,
 .schedule.track-table3 th,
 .schedule.track-table3 td {
-    background-color:  #ffffff; /* Fondo gris claro para las tablas internas */
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd; /* Añadido para definir un borde para las celdas */
+    font-size: 0.9rem;
+}
+
+/* Estilos específicos para Track 2 */
+.schedule.track-table2 th {
+    background-color: #5a9bd3; /* Fondo azul suave para encabezados de Track 2 */
+    color: #ffffff;
+}
+
+.schedule.track-table2 tbody tr:nth-child(even) {
+    background-color: #ebf4fc; /* Fondo claro para filas pares */
+}
+
+.schedule.track-table2 tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* Fondo blanco para filas impares */
+}
+
+.schedule.track-table2 tbody tr:hover {
+    background-color: #d3eaf8; /* Fondo de filas al pasar el ratón */
+}
+
+/* Estilos específicos para Track 3 */
+.schedule.track-table3 th {
+    background-color: #5a9bd3; /* Fondo azul suave para encabezados de Track 3 */
+    color: #ffffff;
+}
+
+.schedule.track-table3 tbody tr:nth-child(even) {
+    background-color: #ebf4fc; /* Fondo claro para filas pares */
+}
+
+.schedule.track-table3 tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* Fondo blanco para filas impares */
+}
+
+.schedule.track-table3 tbody tr:hover {
+    background-color: #d3eaf8; /* Fondo de filas al pasar el ratón */
 }
 
 
-
-
-.schedule.track-table2 tbody tr:nth-child(odd):hover {
-    background-color: #ffffff; /* Color de fondo al pasar el ratón por encima de filas impares */
-}
 .schedule.track-table3 .hora2 {
     padding: 55px;
     text-align: center;
@@ -1076,6 +1102,11 @@ table {
     transition: background-color 0.3s ease;
 }
 
+.custom-hr {
+    width: 50%; /* Ajusta el ancho del <hr> específico */
+    margin-left: auto;
+    margin-right: auto;/* Ajusta el estilo del borde si es necesario */
+}
 .container-session6 .btn:hover {
     background-color: #c0392b; /* Color rojo más oscuro al pasar el mouse */
 }
