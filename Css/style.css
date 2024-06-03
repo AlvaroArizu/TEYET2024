@@ -828,34 +828,23 @@ body {
     margin-bottom: 20px; /* Aumenté el espacio inferior para separar el título del contenido */
 }
 
-/*CRONOGRAMA*/
-.container-crono {
-    background-color: #11597d; /* Cambié el color de fondo a un tono más azulado */
-    padding: 50px 15px;
-    margin-bottom: 20px; /* Añadí un poco de margen inferior */
-    text-align: center;
-    border-radius: 10px; /* Agregué bordes redondeados para suavizar los bordes */
-}
 
-.container-crono h1 {
-    font-size: 2.5rem;
-    color: #fff;
-    margin-bottom: 20px; /* Aumenté el espacio inferior para separar el título del contenido */
-}
-
-.container-crono p {
-    font-size: 1.5rem;
-    color: #fff;
-    margin-bottom: 20px; /* Aumenté el espacio inferior para separar el título del contenido */
-}
 
 /*CRONOGRAMA*/
 .container-crono {
     background-color: #11597d; /* Cambié el color de fondo a un tono más azulado */
-    padding: 50px 15px;
-    margin-bottom: 20px; /* Añadí un poco de margen inferior */
-    text-align: center;
+    padding: 30px 10px; /* Reducir el padding */
+    margin: 0 auto 20px; /* Centrar horizontalmente y añadir un poco de margen inferior */
     border-radius: 10px; /* Agregué bordes redondeados para suavizar los bordes */
+    width: 90%;
+    max-width: 1200px; /* Reducir el ancho máximo opcional */
+    text-align: center;
+}
+.container-crono:hover h2{
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre los contenedores */
+}
+.container-crono:hover i{
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre los contenedores */
 }
 
 .container-crono h1 {
@@ -908,6 +897,11 @@ body {
 .schedule .hora2{
     padding: 40px; /* Ajusté el padding para mantener la consistencia */
     text-align: center;
+}
+.schedule .hora4{
+    padding: 40px; /* Ajusté el padding para mantener la consistencia */
+    text-align: center;
+    font-size: 1rem;
 }
 .schedule .hora3{
     padding: 60px; /* Ajusté el padding para mantener la consistencia */

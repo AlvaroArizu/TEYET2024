@@ -747,6 +747,7 @@
 	</section>
 
 	<section id="crono-section" class="schedule-section section">
+		<div class="wrapper">
 		<div class="container-crono">
 			<h1><i class="fas fa-calendar-alt"></i> Cronograma</h1>
 			<div class="crono-back">
@@ -770,7 +771,7 @@
 							</tr>
 							<tr>
 								<td colspan="2" onclick="toggleTrackContent(this)">
-									<i class="fas fa-caret-right"></i> Contenido del Track 1
+									Contenido del Track 1 <i class="fas fa-caret-right"></i> 
 									<table class="schedule track-table3 hiddenn">
 										<thead>
 											<tr>
@@ -918,9 +919,16 @@
 								</td>
 							</tr>
 							<tr>
-								<td class="hora2">12:00hs</td>
-								<td>Acto de apertura + Conferencia Inaugural</td>
-							</tr>
+								<td class="hora">12:00hs</td>
+								<td class="actividades">
+									<ul>
+										<li>Acto de apertura</li>
+										<li>+</li>
+										<li>Conferencia Inaugural a cargo de:</li>
+										<li>Ing. Martín Giller - CIO ITBA</li>
+									</ul>
+								</td>
+							</tr>														
 							<tr>
 								<td class="hora1">13:30hs</td>
 								<td>Break</td>
@@ -930,12 +938,68 @@
 								<td>Demos</td>
 							</tr>
 							<tr>
+								<td colspan="2" onclick="toggleTrackContent(this)">
+									Contenido del Demo <i class="fas fa-caret-right"></i>
+									<table class="schedule track-table3 hiddenn">
+										<thead>
+											<tr>
+												<th>Título</th>
+												<th>Autores</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Producción de recorridos interactivos aumentados.</td>
+												<td>
+													<ul>
+														<li>Ivan Basciano (UNRN)</li>
+														<li>Edith Lovos (UNRN))</li>
+													</ul>																										
+												</td>
+											</tr>
+											<tr>
+												<td>Mascota interactiva para el aprendizaje de temas de alimentación saludable.</td>
+												<td>
+													<ul>
+														<li>Matías Zeballos (UNLP)</li>
+														<li>Cecilia Sanz (UNLP)</li>
+														<li>Verónica Artola (UNLP)</li>
+														<li>Juan Ignacio Torres (UNLP)</li>
+													</ul>											
+												</td>
+											</tr>
+											<tr>
+												<td>Aulas inmersivas. Un camino hacia el metaverso</td>
+												<td>
+													<ul>
+														<li>Pablo Navarro (UM)</li>
+														<li>Ezequiel Urquiza (UM)</li>
+													</ul>											
+												</td>
+											</tr>
+											<tr>
+												<td>Empoderar, una aplicación de Realidad Aumentada para dar a conocer historias de innovadoras de la Informática.</td>
+												<td>
+													<ul>
+														<li>Verónica Artola (UNLP)</li>
+														<li>Sabrina Lombardo (UNLP)</li>
+														<li>Bárbara Ibañez (UNLP)</li>
+														<li>Cecilia Sanz (UNLP)</li>
+													</ul>
+																										
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
 								<td class="hora3">15:30hs - 18:30hs</td>
 								<td>Track 2</td>
 							</tr>
 							<tr>
 								<td colspan="2" onclick="toggleTrackContent(this)">
-									<i class="fas fa-caret-right"></i> Contenido del Track 2
+									Contenido del Track 2 <i class="fas fa-caret-right"></i>
 									<table class="schedule track-table3 hiddenn">
 										<thead>
 											<tr>
@@ -1089,7 +1153,7 @@
 							</tr>
 							<tr>
 								<td colspan="2" onclick="toggleTrackContent(this)">
-									<i class="fas fa-caret-right"></i> Contenido del Track 3
+									Contenido del Track 3 <i class="fas fa-caret-right"></i>
 									<table class="schedule track-table3 hiddenn">
 										<thead>
 											<tr>
@@ -1207,6 +1271,7 @@
 					</table>
 				</div>
 			</div>
+		</div>
 		</div>
 	</section>
 
