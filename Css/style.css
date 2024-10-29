@@ -811,22 +811,51 @@ body {
 
 /*LIBROS DE ACTAS*/
 .container-acta {
-    background-color:#ffffff;/* Cambié el color de fondo a un tono más azulado */
+    background-color: #ffffff;
     padding: 50px 15px;
-    margin-bottom: 20px; /* Añadí un poco de margen inferior */
+    margin-bottom: 20px;
     text-align: center;
-    border-radius: 10px; /* Agregué bordes redondeados para suavizar los bordes */
+    border-radius: 10px;
 }
+
 .container-acta h1 {
     font-size: 2.5rem;
     color: #11597d;
-    margin-bottom: 20px; /* Aumenté el espacio inferior para separar el título del contenido */
+    margin-bottom: 20px;
 }
+
 .container-acta p {
     font-size: 1.5rem;
     color: #11597d;
-    margin-bottom: 20px; /* Aumenté el espacio inferior para separar el título del contenido */
+    margin-bottom: 20px;
 }
+
+.pdf-download {
+    font-size: 1.5rem;
+    color: #11597d;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-download i {
+    font-size: 2rem;
+    color: #d9534f; /* Color del icono de PDF */
+}
+
+.pdf-download:hover {
+    color: #0a3e56;
+    background-color: #e9ecef;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
 
 
 
@@ -894,6 +923,17 @@ body {
     padding: 20px; /* Ajusté el padding para mantener la consistencia */
     text-align: center;
 }
+
+.schedule .conversatorio li{
+    font-size: 1rem;
+}
+.schedule .conversatorio h6{
+    font-size: 1.2rem;
+}
+
+
+
+
 .schedule .hora2{
     padding: 40px; /* Ajusté el padding para mantener la consistencia */
     text-align: center;
@@ -1223,6 +1263,20 @@ table {
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
+.logos-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten a la fila */
+    gap: 40px;
+}
+
+.logo-container2 img {
+    max-width: 100%; /* Ajuste para imágenes responsivas */
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
 
 @media (max-width: 767px) {
     .container-session h3,
@@ -1281,8 +1335,12 @@ table {
         max-width: 100px;
         filter: drop-shadow(10px 7px 10px #11597d);
     }
-    
-    
+
+    .logo-container2:nth-child(1) img{
+        width: 100%;
+        max-width: 180px;
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
 
     .logo-container:nth-child(1) img:hover{
         transform: scale(1.1); /* Agranda el logo ligeramente */
@@ -1325,6 +1383,11 @@ table {
     .logo-container1:nth-child(2) img:hover{
         transform: scale(1.1); /* Agranda el logo ligeramente */
         filter: drop-shadow(5px 5px 10px #000000); /* Agrega sombra */
+    }
+
+    .logo-container2:nth-child(1) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #ff0000); /* Agrega sombra */
     }
 }
 
@@ -1386,7 +1449,11 @@ table {
         max-width: 120px;
         filter: drop-shadow(10px 7px 10px #11597d);
     }
-    
+    .logo-container2:nth-child(1) img{
+        width: 100%;
+        max-width: 280px;
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
     
 
     .logo-container:nth-child(1) img:hover{
@@ -1430,6 +1497,10 @@ table {
     .logo-container1:nth-child(2) img:hover{
         transform: scale(1.1); /* Agranda el logo ligeramente */
         filter: drop-shadow(5px 5px 10px #000000); /* Agrega sombra */
+    }
+    .logo-container2:nth-child(1) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #ff0000); /* Agrega sombra */
     }
 }
 
@@ -1487,6 +1558,11 @@ table {
         max-width: 130px;
         filter: drop-shadow(10px 7px 10px #11597d);
     }
+    .logo-container2:nth-child(1) img{
+        width: 100%;
+        max-width: 380px;
+        filter: drop-shadow(10px 7px 10px #11597d);
+    }
 
     
     .logo-container:nth-child(1) img:hover{
@@ -1531,51 +1607,120 @@ table {
         transform: scale(1.1); /* Agranda el logo ligeramente */
         filter: drop-shadow(5px 5px 10px #000000); /* Agrega sombra */
     }
+    .logo-container2:nth-child(1) img:hover{
+        transform: scale(1.1); /* Agranda el logo ligeramente */
+        filter: drop-shadow(5px 5px 10px #ff0000); /* Agrega sombra */
+    }
     
 }
 
 
-/* Estilos del footer */
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 15px 0;
+:root {
+    --footer-background: #1e3a5f;  /* Fondo azul oscuro */
+    --text-light-color: #d1e7ff;  /* Azul claro para el texto */
+    --primary-color: #007bff;  /* Azul brillante para el color principal */
+    --hover-color: #5bc0de;  /* Azul turquesa para el color al pasar el ratón */
 }
 
-.footer .footer-logo img {
-    max-width: 100%;
+
+/* Footer Styles */
+.footer {
+    background-color: var(--footer-background);
+    color: var(--text-light-color);
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 2px solid var(--primary-color);
+    position: relative;
+}
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo-icon-footer {
+    width: 60px;
     height: auto;
 }
 
+.footer-logo {
+    margin-bottom: 20px;
+}
 
-.footer .social-list {
+.footer-logo img {
+    width: 120px;
+    height: auto;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social .social-list {
+    padding: 0;
+    margin: 0;
     list-style: none;
-    margin: 0 auto; /* Centra la lista horizontalmente */
-    max-width: 400px; /* Define un ancho máximo para la lista */
-    text-align: center; /* Centra el contenido de la lista */
+    display: flex;
+    gap: 30px;
 }
 
-.footer .social-list li {
-    margin-bottom: 20px; /* Aumenta el espacio entre los íconos */
-    display: inline-block; /* Hace que los íconos sean elementos en línea */
+.footer-social .social-list li {
+    margin: 0;
 }
 
-.footer .social-list li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 30px; /* Ajusta el tamaño de los íconos */
-    margin: 0 15px; /* Agrega un espacio horizontal entre los íconos */
+.footer-social .social-list li a {
+    color: var(--primary-color);
+    font-size: 2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.footer .social-list li a:hover {
-    text-decoration: none; /* Elimina el subrayado al pasar el mouse */
+.footer-social .social-list li a:hover {
+    color: var(--hover-color);
+    transform: scale(1.2);
 }
 
-.footer small {
-    display: block; 
-    text-align: center;
-    font-size: 16px; 
-    font-weight: bold; 
-    margin-top: 5px;
-    color: #ccc; 
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer-bottom small {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.875rem;
+    color: var(--text-light-color);
+}
+
+.footer-bottom small:first-child {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.footer-bottom small:nth-child(2) {
+    color: var(--hover-color);
+}
+
+/* Estilo para separar las secciones del footer con una línea */
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 2px;
+    background-color: var(--primary-color);
 }
